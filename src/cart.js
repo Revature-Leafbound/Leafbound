@@ -56,7 +56,7 @@ async function getProducts() {
   }
 
   async function displayProducts(products) {
-    var parentSection = document.getElementById("products");
+    var parentSection = document.getElementsByClass("cart");
    
   
     for (let i = 0; i < products.length; i++) {
