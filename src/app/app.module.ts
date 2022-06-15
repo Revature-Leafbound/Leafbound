@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 
 import { Routes, RouterModule } from '@angular/router';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OrderDetailsComponent
+    OrderDetailsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -18,6 +20,7 @@ import { Routes, RouterModule } from '@angular/router';
     RouterModule.forRoot([
      // { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: OrderDetailsComponent },
+      { path: 'cart', component: CartComponent },
     ])
   ],
   providers: [],
