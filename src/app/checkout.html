@@ -1,6 +1,11 @@
 
-   <!-- ADDRESS SECTION -->
-   <div class="mat-display-3">Checkout</div>
+
+
+
+<mat-grid-list cols="2">
+  <mat-grid-tile>
+       <!-- ADDRESS SECTION -->
+   
    <form class="example-form">
     <div class="mat-title">Shipping Info:</div>
     <table class="example-full-width" cellspacing="0"><tr>
@@ -37,13 +42,8 @@
         <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
       </mat-form-field></td>
     </tr></table>
-   </form>
 
-
-   <!-- PAYMENT SECTION -->
-   <div class="mat-display-3">Payment</div>
-   <form class="example-form">
-    <div class="mat-title">Add New Card:</div>
+    <div class="mat-title">Add Credit Card:</div>
     <p>
       <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Cardholder's Name</mat-label>
@@ -68,5 +68,21 @@
       </mat-form-field></td>
     </tr></table>
    </form>
-   <!-- PURCHASE SECTION -->
-   <div class="mat-display-3">Purchase Summary</div>
+  </mat-grid-tile>
+    
+
+
+  <mat-grid-tile>
+    <div>
+      <div class="mat-headline">Order Summary:</div>
+      <div class="mat-body-2">Subtotal:</div>
+      <div class="mat-body-2">Shipping:</div>
+      <div class="mat-body-2">Total:</div>
+      <br>
+      <br>
+      <button mat-stroked-button>Purchase</button>
+    </div>
+    
+  </mat-grid-tile>
+
+</mat-grid-list>
