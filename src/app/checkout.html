@@ -2,6 +2,7 @@
    <!-- ADDRESS SECTION -->
    <div class="mat-display-3">Checkout</div>
    <form class="example-form">
+    <div class="mat-title">Shipping Info:</div>
     <table class="example-full-width" cellspacing="0"><tr>
       <td><mat-form-field class="example-full-width" appearance="fill">
         <mat-label>First name</mat-label>
@@ -36,8 +37,36 @@
         <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
       </mat-form-field></td>
     </tr></table>
-  </form>
+   </form>
+
+
    <!-- PAYMENT SECTION -->
    <div class="mat-display-3">Payment</div>
+   <form class="example-form">
+    <div class="mat-title">Add New Card:</div>
+    <p>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Cardholder's Name</mat-label>
+        <input matInput>
+      </mat-form-field>
+      
+    </p>
+  
+    <table class="example-full-width" cellspacing="1"><tr>
+      <td><mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Card Number</mat-label>
+        <input matInput>
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Expire Date</mat-label>
+        <input matInput placeholder="MM/YYYY">
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>CVV</mat-label>
+        <input matInput #postalCode maxlength="3" placeholder="">
+        <mat-hint align="end">{{postalCode.value.length}} / 3</mat-hint>
+      </mat-form-field></td>
+    </tr></table>
+   </form>
    <!-- PURCHASE SECTION -->
    <div class="mat-display-3">Purchase Summary</div>
