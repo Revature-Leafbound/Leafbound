@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { ProductDisplayComponent } from './product-display/product-display.component';
 import { ProductDisplayShelfComponent } from './product-display/product-display-shelf/product-display-shelf.component';
 import { ProductDisplayItemComponent } from './product-display/product-display-shelf/product-display-item/product-display-item.component';
-import { ProductItemComponent } from './product-item/product-item.component';
+import { ProductItemComponent } from './product-display/product-item/product-item.component';
 
 @NgModule({
   declarations: [
