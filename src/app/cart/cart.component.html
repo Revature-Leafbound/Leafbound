@@ -1,6 +1,44 @@
-<h3>Cart</h3>
+<!DOCTYPE html>
 
-<div class="cart-item" *ngFor="let item of product">
-  <span>{{ item.name }}</span>
-  <span>{{ item.price | currency }}</span>
-</div>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+
+<form id="cart" action="cart.html" method="post">
+    <table class="cart">
+        <thead>
+            <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <p id="sub-total">
+        <strong>Sub Total</strong>: <span id="stotal"></span>
+    </p>
+    <ul id="cart-actions">
+        <li>
+            <input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+        </li>
+        <li>
+            <input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+        </li>
+        <li>
+            <a href="index.html" class="btn">Continue Shopping</a>
+        </li>
+        <li>
+            <a href="checkout.html" class="btn">Go To Checkout</a>
+        </li>
+    </ul>
+</form>
+
+    </body>
+
+</html>
