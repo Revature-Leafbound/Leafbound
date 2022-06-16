@@ -9,10 +9,12 @@
 span{
     padding-left: 2rem;
 }
-.logo-image{
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: -6px;
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    margin-top: 5px;    /* if you want it vertically middle of the navbar. */
 }
