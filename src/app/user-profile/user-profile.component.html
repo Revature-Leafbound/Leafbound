@@ -39,4 +39,11 @@
     <input matInput placeholder="pat@example.com" [formControl]="email" required>
     <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
   </mat-form-field>
+  <mat-divider></mat-divider>
+<section>
+  <div class="example-button-row">
+    <button mat-raised-button color="primary">Save changes</button>
+    <button mat-raised-button color="accent">Cancle</button>
+  </div>
+</section>
 </div>
