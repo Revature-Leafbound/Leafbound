@@ -3,3 +3,9 @@
     flex-direction: column;
     padding-top: 15px;
 }
+
+#shelf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
