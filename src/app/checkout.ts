@@ -8,5 +8,9 @@ import {Component} from '@angular/core';
   styleUrls: ['checkout.css'],
   templateUrl: 'checkout.html',
 })
-export class checkout {}
+export class checkout {
+  purchase(){
+    console.log("Submit button was pressed")
+  }
+}
 
