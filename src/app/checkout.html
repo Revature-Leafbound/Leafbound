@@ -74,13 +74,27 @@
 
   <mat-grid-tile>
     <div>
-      <div class="mat-headline">Order Summary:</div>
-      <div class="mat-body-2">Subtotal: $200</div>
-      <div class="mat-body-2">Shipping: $20</div>
-      <div class="mat-body-2">Total: $220</div>
+      <div class="mat-title">Order Summary:</div>
+      <mat-list>
+        <div mat-subheader>Cart Items:</div>
+        <mat-list-item *ngFor="let cartItem of cartItems">
+          <mat-icon mat-list-icon>library_books</mat-icon>
+          <div mat-line><div class="subheading-1">{{cartItem.name}}</div></div>
+          <div mat-line><div class="subheading-1">{{cartItem.price}}</div>  </div>
+        </mat-list-item>
+        
+        
+      </mat-list>
       <br>
+      <mat-divider></mat-divider>
+      <div class="mat-body-2">Subtotal: <div class="mat-headline">$100</div></div>
+      <mat-divider></mat-divider>
+      <div class="mat-body-2">Shipping:  <div class="mat-headline">$20</div></div>
+      <mat-divider></mat-divider>
+      <div class="mat-body-2">Total:  <div class="mat-headline">$120</div></div>
+      <mat-divider></mat-divider>
       <br>
-      <button (click)="purchase()" mat-stroked-button>Purchase</button>
+      <button (click)="purchase()"  mat-raised-button color="primary"Warn>Purchase</button>
     </div>
     
   </mat-grid-tile>
