@@ -20,10 +20,11 @@ export class OrderDetailsComponent implements OnInit {
 
     ) { }
 
-    addToCart(product: Product) {
-      this.cartService.addToCart(product);
+    addToCart(product: any) {
+      this.cartService.addToCart(product, product.id);
       window.alert('Your product has been added to the cart!');
     }
+    
 
   ngOnInit() {
     // First get the product id from the current route.
