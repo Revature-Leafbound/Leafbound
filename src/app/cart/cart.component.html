@@ -1,44 +1,45 @@
-<!DOCTYPE html>
+<link rel="stylesheet" href="cart.component.css">
 
-<html>
+<mat-grid-list cols="2">
+    <mat-grid-tile>
 
-    <head>
+        <form id="cart" action="cart.html" method="post" class="example-form">
+            <div class="mat-title">Cart:</div>
+            <table class="example-full-width" cellspacing="0">
 
-    </head>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Price</th>
+                </tr>
 
-    <body>
+                <tbody></tbody>
+            </table>
+            <p id="sub-total">
+                <strong>Sub Total</strong>: <span id="stotal"></span>
+            </p>
+            <ul id="cart-actions">
+                <br>
+                <mat-divider></mat-divider>
+                <section>
+                    <div class="example-label">Raised</div>
+                    <div class="example-button-row">
+                        <!-- need to add click event here -->
+                        <button (click)="" mat-raised-button color="primary" Warn>Update Cart</button>
+
+                        <!-- need to add click event here -->
+                        <button (click)="" mat-raised-button color="primary" Warn>Empty Cart</button>
+
+                        <button (click)="window.open(.../index.html);" mat-raised-button color="primary" Warn>Continue
+                            Shopping</button>
+
+                        <button (click)="window.open(../checkout.html);" mat-raised-button color="primary"
+                            Warn>Checkout</button>
+                    </div>
+                </section>
 
 
-<form id="cart" action="cart.html" method="post">
-    <table class="cart">
-        <thead>
-            <tr>
-                <th scope="col">Item</th>
-                <th scope="col">Qty</th>
-                <th scope="col">Price</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-    <p id="sub-total">
-        <strong>Sub Total</strong>: <span id="stotal"></span>
-    </p>
-    <ul id="cart-actions">
-        <li>
-            <input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
-        </li>
-        <li>
-            <input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
-        </li>
-        <li>
-            <a href="index.html" class="btn">Continue Shopping</a>
-        </li>
-        <li>
-            <a href="checkout.html" class="btn">Go To Checkout</a>
-        </li>
-    </ul>
-</form>
+        </form>
 
-    </body>
-
-</html>
+    </mat-grid-tile>
+</mat-grid-list>
