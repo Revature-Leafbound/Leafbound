@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from '../app-routing.module';
-import { AppComponent } from '../app.component';
-import { OrderDetailsComponent } from '../order-details/order-details.component';
+import { AppRoutingModule } from './app/app-routing.module';
+import { AppComponent } from './app/app.component';
+import { OrderDetailsComponent } from './app/order-details/order-details.component';
 
 import { Routes, RouterModule } from '@angular/router';
-import { CartComponent } from './cart.component';
+import { CartComponent } from './app/cart/cart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MaterialExampleModule} from '../../material.module';
+import {MaterialExampleModule} from './material.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
