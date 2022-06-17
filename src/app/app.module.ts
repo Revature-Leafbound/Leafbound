@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-=======
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+<<<<<<< HEAD
 import { RouterModule } from '@angular/router';
 import {HttpClientModule } from '@angular/common/http';
 
@@ -21,17 +17,18 @@ import { ProductItemComponent } from './components/product-display/product-item/
 import { UserProfileComponent } from './user-profile/user-profile.component';
 >>>>>>> 21-fe-front-end-review
 import { RegisterComponent } from './components/register/register.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+=======
 >>>>>>> 21-fe-front-end-review
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MaterialExampleModule} from '../material.module';
-import { navbar } from './navbar';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatNativeDateModule} from '@angular/material/core';
-import {HttpClientModule} from '@angular/common/http';
-import { RoutingModule } from './routing/routing.module';
-// import { AppRoutingModule } from './app-routing.module';
+import { MaterialExampleModule } from '../material.module';
+import { checkout } from './checkout';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
+<<<<<<< HEAD
 <<<<<<< HEAD
   declarations: [navbar],
 =======
@@ -51,15 +48,18 @@ import { RoutingModule } from './routing/routing.module';
 >>>>>>> 21-fe-front-end-review
   ],
 >>>>>>> 21-fe-front-end-review
+=======
+  declarations: [checkout],
+>>>>>>> 21-fe-front-end-review
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
-<<<<<<< HEAD
     FormsModule,
     HttpClientModule,
     MatNativeDateModule,
     MaterialExampleModule,
     ReactiveFormsModule,
+<<<<<<< HEAD
     RoutingModule,
     
 =======
@@ -73,8 +73,10 @@ import { RoutingModule } from './routing/routing.module';
 =======
     BrowserAnimationsModule
 >>>>>>> 21-fe-front-end-review
+=======
+>>>>>>> 21-fe-front-end-review
   ],
   providers: [],
-  bootstrap: [navbar],
+  bootstrap: [checkout],
 })
 export class AppModule {}
