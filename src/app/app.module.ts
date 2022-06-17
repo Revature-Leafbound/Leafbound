@@ -7,9 +7,10 @@ import { checkout } from './checkout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
+import { navbar } from './components/navbar/navbar.component';
 
 @NgModule({
-  declarations: [checkout],
+  declarations: [checkout, navbar],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
