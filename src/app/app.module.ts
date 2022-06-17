@@ -8,9 +8,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
 import { navbar } from './components/navbar/navbar.component';
+import { ProductsComponent } from './components/products/products.component';
+import { ProductShelfComponent } from './components/products/product-shelf/product-shelf.component';
+import { ProductItemComponent } from './components/products/product-item/product-item.component';
+import { ProductShelfItemComponent } from './components/products/product-shelf/product-shelf-item/product-shelf-item.component';
 
 @NgModule({
-  declarations: [checkout, navbar],
+  declarations: [checkout, navbar, ProductsComponent, ProductShelfComponent, ProductItemComponent, ProductShelfItemComponent],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
