@@ -1,13 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {DataSource} from '@angular/cdk/collections';
 import {Observable, ReplaySubject} from 'rxjs';
+import { Order } from 'src/app/models/order';
+import { OrderService } from 'src/app/services/order.service';
 
-export interface order {
-  orderId: number;
-  productId: number;
-  quantity: number;
-}
-const ORDER_DATA: order[] = [];
+
 
 @Component({
   selector: 'app-order-history',
@@ -16,19 +13,23 @@ const ORDER_DATA: order[] = [];
 })
 export class OrderHistoryComponent implements OnInit {
 
-  displayedColumns: string[] = ['orderId', 'productId', 'quantity'];
-  dataToDisplay = [...ORDER_DATA];
+  
+  ordersList: Order[] = [];
 
-  dataSource = new ExampleDataSource(this.dataToDisplay);
-
-  addData() {
-    const randomElementIndex = Math.floor(Math.random() * ELEMENT_DATA.length);
-    this.dataToDisplay = [...this.dataToDisplay, ELEMENT_DATA[randomElementIndex]];
-    this.dataSource.setData(this.dataToDisplay);
-  }
-  constructor() { }
+  constructor(private orderService: OrderService) { }
 
   ngOnInit(): void {
+    this.getOrderHistory();
+  }
+  getOrderHistory() {
+    this.orderService.getOrders().subscribe((res) => {
+      this.ordersList.push(res);
+      if (res)
+        console.log("ok")
+    },
+      err =>
+        console.log("faild")
+    );
   }
 
 }
