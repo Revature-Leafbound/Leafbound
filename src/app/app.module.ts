@@ -8,9 +8,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
 import { navbar } from './components/navbar/navbar.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
-  declarations: [checkout, navbar],
+  declarations: [checkout, navbar, CartComponent],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
