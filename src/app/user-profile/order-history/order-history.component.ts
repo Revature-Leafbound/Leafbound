@@ -3,7 +3,7 @@ import {DataSource} from '@angular/cdk/collections';
 import {Observable, ReplaySubject} from 'rxjs';
 import { Order } from 'src/app/models/order';
 import { OrderService } from 'src/app/services/order.service';
-
+import {MatTableModule} from '@angular/material/table'
 
 
 @Component({
