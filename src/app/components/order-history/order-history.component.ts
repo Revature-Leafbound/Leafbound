@@ -22,14 +22,9 @@ export class OrderHistoryComponent implements OnInit {
     this.getOrderHistory();
   }
   getOrderHistory() {
-    this.orderService.getOrders().subscribe((res) => {
-      this.ordersList.push(res);
-      if (res)
-        console.log("ok")
-    },
-      err =>
-        console.log("faild")
-    );
+    this.orderService.getOrderHistory().subscribe((res) => {
+      this.ordersList = res
+      console.log(this.ordersList)});
   }
 
 }

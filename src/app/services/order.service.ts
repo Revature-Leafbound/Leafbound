@@ -9,7 +9,9 @@ export class OrderService {
 
   constructor(private http: HttpClient) { }
 
-  getOrders():Observable<any> {
-    return this.http.get('localhost:8080/api/v1/orderall');//pass x-auth token as well
+  //get an obervable of all orders 
+  getOrderHistory(): Observable<Order[]> {
+    return this.http.get<Order[]>('/api/order/all');
+   
    }
 }
