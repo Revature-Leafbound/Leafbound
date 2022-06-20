@@ -21,6 +21,6 @@ import { navbar } from './components/navbar/navbar.component';
     ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [checkout],
+  bootstrap: [checkout, navbar],
 })
 export class AppModule {}
