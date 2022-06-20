@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialExampleModule } from '../material.module';
-import { checkout } from './checkout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
 import { navbar } from './components/navbar/navbar.component';
+import { checkout } from './components/checkout/checkout.component';
 
 @NgModule({
-  declarations: [checkout, navbar],
+  declarations: [navbar, checkout],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
@@ -21,6 +21,6 @@ import { navbar } from './components/navbar/navbar.component';
     ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [checkout, navbar],
+  bootstrap: [ navbar,checkout],
 })
 export class AppModule {}
