@@ -26,8 +26,10 @@ import { checkout } from './checkout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
+import { navbar } from './components/navbar/navbar.component';
 
 @NgModule({
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   declarations: [navbar],
@@ -50,6 +52,9 @@ import { HttpClientModule } from '@angular/common/http';
 >>>>>>> 21-fe-front-end-review
 =======
   declarations: [checkout],
+>>>>>>> 21-fe-front-end-review
+=======
+  declarations: [checkout, navbar],
 >>>>>>> 21-fe-front-end-review
   imports: [
     BrowserAnimationsModule,
@@ -77,6 +82,6 @@ import { HttpClientModule } from '@angular/common/http';
 >>>>>>> 21-fe-front-end-review
   ],
   providers: [],
-  bootstrap: [checkout],
+  bootstrap: [checkout, navbar],
 })
 export class AppModule {}

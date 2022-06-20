@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Product } from 'src/app/models/product';
 
 @Component({
   selector: 'app-product-item',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductItemComponent implements OnInit {
 
-  constructor() { }
+
+  @Input()
+  currentSelectedProduct?: Product;
+
+  onAddToCart():void {
+    console.log(this.currentSelectedProduct);
+  }
+
+  getId(isbn: string):string {
+    return  "https://covers.openlibrary.org/b/isbn/" + isbn + "-L.jpg"
+  }
+
+  constructor(private appService:ProductService) { }
 
   ngOnInit(): void {
+    this.appService.currentSelectedProduct.subscribe(product => this.currentSelectedProduct = product)
   }
 
 }
