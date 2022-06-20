@@ -16,7 +16,7 @@ export class CartComponent implements OnInit {
     
   }
 
-  retieveCart(): void {
+  retrieveCart(): void {
     this.cartService.getAll()
     .subscribe({
       next: (data) => {

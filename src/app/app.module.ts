@@ -23,6 +23,6 @@ import { Cart } from './models/cart.model';
     ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [Cart],
+  bootstrap: [CartComponent],
 })
 export class AppModule {}
