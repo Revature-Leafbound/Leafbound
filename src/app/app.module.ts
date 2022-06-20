@@ -9,6 +9,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
 import { navbar } from './components/navbar/navbar.component';
 import { CartComponent } from './components/cart/cart.component';
+import { Cart } from './models/cart.model';
 
 @NgModule({
   declarations: [checkout, navbar, CartComponent],
@@ -22,6 +23,6 @@ import { CartComponent } from './components/cart/cart.component';
     ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [checkout],
+  bootstrap: [Cart],
 })
 export class AppModule {}
