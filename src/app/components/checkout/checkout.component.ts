@@ -1,19 +1,16 @@
-import {Component} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 export interface Section {
   name: string;
   price: string;
 }
 
-/**
- * @title Basic Inputs
- */
 @Component({
   selector: 'checkout',
-  styleUrls: ['checkout.css'],
-  templateUrl: 'checkout.html',
+  templateUrl: 'checkout.component.html',
+  styleUrls: ['checkout.component.css']
 })
-export class checkout {
+export class checkout implements OnInit {
   purchase(){
     console.log("Submit button was pressed")
   }
@@ -31,6 +28,9 @@ export class checkout {
       price:"$50"
     },
   ];
-  
-}
+  constructor() { }
 
+  ngOnInit(): void {
+  }
+
+}
