@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Order } from '../models/order';
 import { Observable } from 'rxjs';
+import { getInstructionStatements } from '@angular/compiler/src/render3/view/util';
 @Injectable({
   providedIn: 'root'
 })
@@ -11,7 +12,14 @@ export class OrderService {
 
   //get an obervable of all orders 
   getOrderHistory(): Observable<Order[]> {
-    return this.http.get<Order[]>('/api/order/all');
+    //add token to header
+    const headers = {
+      'Authorization': 'Bearer ' + localStorage.getItem('token')
+    }
+    
+
+    return this.http.get<Order[]>('http://localhost:8080/api/order/history', { headers });
+   // return this.http.get<Order[]>('/api/order/all');
    
    }
 }
