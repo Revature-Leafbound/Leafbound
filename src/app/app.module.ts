@@ -16,8 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialExampleModule } from '../material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
-import { navbar } from './components/navbar/navbar.component';
-import { checkout } from './components/checkout/checkout.component';
+import { NavBarComponent } from './components/navbar/navbar.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -28,8 +28,8 @@ import { checkout } from './components/checkout/checkout.component';
     ProductItemComponent,
     UserProfileComponent,
     RegisterComponent,
-    navbar,
-    checkout,
+    NavBarComponent,
+    CheckoutComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -44,6 +44,6 @@ import { checkout } from './components/checkout/checkout.component';
     HttpClientModule,
   ],
   providers: [],
-  bootstrap: [navbar, checkout],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
