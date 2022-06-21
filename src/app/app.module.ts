@@ -5,7 +5,7 @@ import { ProductDisplayComponent } from './components/product-display/product-di
 import { ProductDisplayShelfComponent } from './components/product-display/product-display-shelf/product-display-shelf.component';
 import { ProductItemComponent } from './components/product-display/product-item/product-item.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
-import { RegisterComponent } from './components/register/register.component';
+import { RegistrationFormComponent } from './components/registration-form/registration-form.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,20 +17,25 @@ import { MaterialExampleModule } from '../material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { NavBarComponent } from './components/navbar/navbar.component';
+import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { RouterModule } from '@angular/router';
+
+import { Cart } from './models/cart.model';
 
 @NgModule({
   declarations: [
     AppComponent,
+    CartComponent,
     LoginComponent,
     ProductDisplayComponent,
     ProductDisplayShelfComponent,
     ProductItemComponent,
     UserProfileComponent,
-    RegisterComponent,
+    RegistrationFormComponent,
     NavBarComponent,
     CheckoutComponent,
+    CartComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -42,11 +47,11 @@ import { RouterModule } from '@angular/router';
     MaterialExampleModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      {path: 'product', component: ProductDisplayComponent},
-      {path: 'product/shelf', component: ProductDisplayShelfComponent},
-      {path: 'product/item', component: ProductItemComponent},
-      {path: '', redirectTo: '/product/shelf', pathMatch: 'full'},
-    ])
+      { path: 'product', component: ProductDisplayComponent },
+      { path: 'product/shelf', component: ProductDisplayShelfComponent },
+      { path: 'product/item', component: ProductItemComponent },
+      { path: '', redirectTo: '/product/shelf', pathMatch: 'full' },
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent],
