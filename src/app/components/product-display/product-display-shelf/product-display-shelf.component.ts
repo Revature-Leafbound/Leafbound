@@ -3,6 +3,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { PRODUCTS } from 'src/app/models/mock-products';
 import { Product } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-product-display-shelf',
@@ -15,7 +16,7 @@ export class ProductDisplayShelfComponent implements OnInit {
   selectedProduct?: Product;
   testingProducts = PRODUCTS;
 
-  url = 'http://localhost:8080/api/v1/product/all';
+  url = environment.apiUrl + '/product/all';
 
   @Output() msgToSibling = new EventEmitter<Product>();
 

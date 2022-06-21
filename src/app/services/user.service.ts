@@ -4,6 +4,7 @@ import { catchError, Observable, of, tap } from 'rxjs';
 import { MessagesService } from './messages.service';
 import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { User } from '../models/user';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -12,10 +13,10 @@ export class UserService {
   constructor(
     private messageService: MessagesService,
     private http: HttpClient
-  ) { }
+  ) {}
 
   attemptLogin(credentials: LoginCredentials): Observable<any> {
-    const url = 'http://localhost:8080/api/v1/user/login';
+    const url = environment.apiUrl + '/user/login';
 
     return this.http
       .post<any>(url, credentials, {
@@ -29,7 +30,7 @@ export class UserService {
   }
 
   register(user: User) {
-    const url = 'localhost:8080/api/v1/users/register';
+    const url = environment.apiUrl + '/users/register';
     return this.http.post(url, user);
   }
 
