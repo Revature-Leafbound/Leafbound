@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { PRODUCTS } from 'src/app/models/mock-products';
 import { Product } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service';
 
@@ -12,6 +13,7 @@ export class ProductDisplayShelfComponent implements OnInit {
   isInCart: boolean = false;
   products: any;
   selectedProduct?: Product;
+  testingProducts = PRODUCTS;
 
   url = 'http://localhost:8080/api/v1/product/all';
 
