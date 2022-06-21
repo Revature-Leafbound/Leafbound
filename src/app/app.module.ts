@@ -5,7 +5,7 @@ import { ProductDisplayComponent } from './components/product-display/product-di
 import { ProductDisplayShelfComponent } from './components/product-display/product-display-shelf/product-display-shelf.component';
 import { ProductItemComponent } from './components/product-display/product-item/product-item.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
-import { RegistrationForm } from './components/registration-form/registration-form.component';
+import { RegistrationFormComponent } from './components/registration-form/registration-form.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -28,7 +28,7 @@ import { RouterModule } from '@angular/router';
     ProductDisplayShelfComponent,
     ProductItemComponent,
     UserProfileComponent,
-    RegistrationForm,
+    RegistrationFormComponent,
     NavBarComponent,
     CheckoutComponent,
   ],
