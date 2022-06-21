@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Cart } from '../models/cart.model';
 import { environment } from 'src/environments/environment';
 
-const baseUrl = environment.apiUrl + '/api/v1/OrderDetails';
+const baseUrl = environment.apiUrl + '/api/v1/cart';
 
 @Injectable({
   providedIn: 'root',
