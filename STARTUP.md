@@ -1,4 +1,4 @@
-# Leafbound Startup
+# Leafbound Startup Documentation
 
 Github Repository: [Leafbound](https://github.com/Revature-Leafbound/Leafbound)
 
