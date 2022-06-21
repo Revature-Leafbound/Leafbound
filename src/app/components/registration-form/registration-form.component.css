@@ -1,6 +1,13 @@
 .main-div{
-    height: 50vh;
+    height: 40vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: center; 
+    justify-content:center;
+    
+  }
+
+  mat-card{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 10px 15px #888888;
   }
