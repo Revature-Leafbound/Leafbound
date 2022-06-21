@@ -2,14 +2,15 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Cart } from '../models/cart.model';
-const baseUrl = 'localhost:8080/api/v1/OrderDetails';
+import { environment } from 'src/environments/environment';
+
+const baseUrl = environment.apiUrl + '/api/v1/OrderDetails';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CartService {
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
   getAll(): Observable<Cart[]> {
     return this.http.get<Cart[]>(baseUrl);
   }
