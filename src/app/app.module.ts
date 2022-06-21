@@ -21,6 +21,9 @@ import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { RouterModule } from '@angular/router';
 
+import { CartComponent } from './components/cart/cart.component';
+import { Cart } from './models/cart.model';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +36,7 @@ import { RouterModule } from '@angular/router';
     RegistrationFormComponent,
     NavBarComponent,
     CheckoutComponent,
+    CartComponent,
   ],
   imports: [
     AppRoutingModule,
