@@ -46,6 +46,7 @@ import { Cart } from './models/cart.model';
     MatNativeDateModule,
     MaterialExampleModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: 'product', component: ProductDisplayComponent },
       { path: 'product/shelf', component: ProductDisplayShelfComponent },
