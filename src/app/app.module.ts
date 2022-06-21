@@ -17,7 +17,9 @@ import { MaterialExampleModule } from '../material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { NavBarComponent } from './components/navbar/navbar.component';
+import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { Cart } from './models/cart.model';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
