@@ -26,6 +26,7 @@ import { Cart } from './models/cart.model';
 @NgModule({
   declarations: [
     AppComponent,
+    CartComponent,
     LoginComponent,
     ProductDisplayComponent,
     ProductDisplayShelfComponent,
@@ -34,6 +35,7 @@ import { Cart } from './models/cart.model';
     RegistrationFormComponent,
     NavBarComponent,
     CheckoutComponent,
+    CartComponent,
   ],
   imports: [
     AppRoutingModule,

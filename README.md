@@ -1,27 +1,51 @@
-# Leafbound
+# LEAFBOUND E-COMMERCE SITE
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+![Project Logo](/documents/FrontEndStyles/images/Screen%20Shot%202022-06-20%20at%2020.46.21.png)
 
-## Development server
+### Project Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+_The Leafbound online e-commerce platform is a full stack application where users can purchase books, view their profile, and view order details._
 
-## Code scaffolding
+### Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Git & GitHub for version control
+- Java 8
+- Spring Boot
+- Angular 13.3.7
+- Node Package Manager
+- AWS RDS and PostgreSQL for persistence
+- Maven for dependencies and project management
+- Mockito and Spring Test for testing
+- JaCoCo to genereate coverage reports
+- Swagger for API documentation
 
-## Build
+### Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Anyone can register to purchase books
+- Anyone can view products (books) on the Leafbound e-commerce site
+- A customer can login
+- A customer can load products (books) into their cart
+- A customer can checkout
+- A customer can view previous orders
 
-## Running unit tests
+### Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Please check out our Startup Documentation for more information.
 
-## Running end-to-end tests
+- For backend, click [here](https://github.com/Revature-Leafbound/Leafbound-API/blob/dev/STARTUP.md)
+- For frontend, click [here](/STARTUP.md)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Contributors
 
-## Further help
+| Scrum Masters | Team Leads                                      | DevOps & Git Organizers |
+| :------------ | :---------------------------------------------- | :---------------------- |
+| Calvin Raines | Calvin Raines - _Engineering_                   | Jose E. Fuentes         |
+| Levi Choi     | Chris Osborne & Jose E. Fuentes - _Engineering_ | Jorge Ayestas           |
+|               | Dhruv Patel - _Engineering_                     |                         |
+|               | Levi Choi - DevOps                              |                         |
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+| Engineers      |                |                    |               |                  |
+| :------------- | :------------- | :----------------- | :------------ | ---------------- |
+| Jacob Shaw     | Patrick Miller | Adam Lucas         | Yugal Subedi  | Julian Mercado   |
+| Vidya Bineesh  | Jorge Ayestas  | Jose E. Fuentes    | Enock Lee     | Joachim Ogodi    |
+| Patrick Yaegar | Markus Grier   | Santiago Garcia II | Jorge Galeana | Michael Bornhoft |
