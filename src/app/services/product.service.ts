@@ -12,7 +12,7 @@ export class ProductService {
   private selectedProduct = new BehaviorSubject(this.product);
   currentSelectedProduct = this.selectedProduct.asObservable();
  
-  constructor(private http:HttpClient) { }
+  constructor() { }
 
   updateSelectedProduct(product:Product) {
     this.selectedProduct.next(product);

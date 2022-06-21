@@ -18,6 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { NavBarComponent } from './components/navbar/navbar.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -40,8 +41,12 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
     MatNativeDateModule,
     MaterialExampleModule,
     ReactiveFormsModule,
-
-    HttpClientModule,
+    RouterModule.forRoot([
+      {path: 'product', component: ProductDisplayComponent},
+      {path: 'product/shelf', component: ProductDisplayShelfComponent},
+      {path: 'product/item', component: ProductItemComponent},
+      {path: '', redirectTo: '/product/shelf', pathMatch: 'full'},
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent],
