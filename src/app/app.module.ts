@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,12 +10,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialExampleModule } from '../material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
-import { HttpClientModule } from '@angular/common/http';
-import { navbar } from './components/navbar/navbar.component';
-import { checkout } from './components/checkout/checkout.component';
+import { NavBarComponent } from './components/navbar/navbar.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 @NgModule({
-  declarations: [navbar, checkout],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    NavBarComponent,
+    CheckoutComponent,
+  ],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
@@ -28,6 +31,6 @@ import { checkout } from './components/checkout/checkout.component';
     ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [ navbar,checkout],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

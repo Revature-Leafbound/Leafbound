@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
 
-
 /**
  * @title Basic toolbar
  */
 @Component({
-  selector: 'navbar',
+  selector: 'app-navbar',
   templateUrl: 'navbar.component.html',
   styleUrls: ['navbar.component.css'],
 })
-export class navbar {
-  
-}
+export class NavBarComponent {}
