@@ -19,7 +19,10 @@
     </a>
     <div class="purchase">
       <!-- [disabled]="isInCart" makes all buttons disabled-->
-      <button mat-raised-button color="accent" (click)="onAddToCart(product)">
+      <button
+        class="btn btn-success btn-lg btn-block"
+        (click)="onAddToCart(product)"
+      >
         Add to Cart
       </button>
     </div>
