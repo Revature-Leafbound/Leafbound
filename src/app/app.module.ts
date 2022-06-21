@@ -1,5 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+import { ProductDisplayComponent } from './components/product-display/product-display.component';
+import { ProductDisplayShelfComponent } from './components/product-display/product-display-shelf/product-display-shelf.component';
+import { ProductItemComponent } from './components/product-display/product-item/product-item.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { RegisterComponent } from './components/register/register.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,18 +23,25 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
   declarations: [
     AppComponent,
     LoginComponent,
+    ProductDisplayComponent,
+    ProductDisplayShelfComponent,
+    ProductItemComponent,
+    UserProfileComponent,
+    RegisterComponent,
     NavBarComponent,
     CheckoutComponent,
   ],
   imports: [
+    AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
     HttpClientModule,
     MatNativeDateModule,
     MaterialExampleModule,
     ReactiveFormsModule,
+
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
