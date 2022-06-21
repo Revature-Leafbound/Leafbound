@@ -1,6 +1,6 @@
 # LEAFBOUND E-COMMERCE SITE
 
-![Project Logo](/Branching%20Guidelines/Imgs/Screen%20Shot%202022-06-20%20at%2020.46.21.png)
+![Project Logo](/documents/FrontEndStyles/images/Screen%20Shot%202022-06-20%20at%2020.46.21.png)
 
 ### Project Description
 
@@ -32,7 +32,7 @@ _The Leafbound online e-commerce platform is a full stack application where user
 
 Please check out our Startup Documentation for more information.
 
-- For backend, click [here](/STARTUP.md)
+- For backend, click [here](https://github.com/Revature-Leafbound/Leafbound-API/blob/dev/STARTUP.md)
 - For frontend, click [here](/STARTUP.md)
 
 ### Contributors
