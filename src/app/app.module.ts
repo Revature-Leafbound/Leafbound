@@ -20,6 +20,9 @@ import { NavBarComponent } from './components/navbar/navbar.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { RouterModule } from '@angular/router';
 
+import { CartComponent } from './components/cart/cart.component';
+import { Cart } from './models/cart.model';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +34,7 @@ import { RouterModule } from '@angular/router';
     RegisterComponent,
     NavBarComponent,
     CheckoutComponent,
+    CartComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -42,11 +46,11 @@ import { RouterModule } from '@angular/router';
     MaterialExampleModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      {path: 'product', component: ProductDisplayComponent},
-      {path: 'product/shelf', component: ProductDisplayShelfComponent},
-      {path: 'product/item', component: ProductItemComponent},
-      {path: '', redirectTo: '/product/shelf', pathMatch: 'full'},
-    ])
+      { path: 'product', component: ProductDisplayComponent },
+      { path: 'product/shelf', component: ProductDisplayShelfComponent },
+      { path: 'product/item', component: ProductItemComponent },
+      { path: '', redirectTo: '/product/shelf', pathMatch: 'full' },
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent],
