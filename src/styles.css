@@ -27,3 +27,4 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 >>>>>>> 21-fe-front-end-review
 >>>>>>> 21-fe-front-end-review
+@import "~bootstrap/dist/css/bootstrap.css"
