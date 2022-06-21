@@ -23,3 +23,7 @@ a {
 .book-author {
   font-style: italic;
 }
+
+.shelf-product-img img {
+  height: 280px;
+}
