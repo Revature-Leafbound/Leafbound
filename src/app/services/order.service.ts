@@ -19,7 +19,7 @@ export class OrderService {
     //get the customer's id number from local storage
     const customerId = localStorage.getItem('customerId');
 
-    return this.http.get<Order[]>(`http://localhost:8080/api/order/customer/{customerId}`, { headers });
+    return this.http.get<Order[]>(`http://localhost:8080/api/v1/order/customer/{customerId}`, { headers });
    // return this.http.get<Order[]>('/api/order/all');
    
    }
