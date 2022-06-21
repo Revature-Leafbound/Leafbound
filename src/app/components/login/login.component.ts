@@ -20,15 +20,16 @@ export class LoginComponent implements OnInit {
     private userService: UserService,
     private formBuilder: FormBuilder,
     private router: Router
-  ) { }
+  ) {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   //Attempts login and provides response with access to the jwt.
   onSubmit(): void {
     this.userService
       .attemptLogin(<LoginCredentials>this.loginForm.value)
       .subscribe((response) => {
+        //console.log(response.headers.get('x-auth-token'));
         localStorage.setItem('token', response.headers.get('x-auth-token'));
         this.router.navigate(['/']);
       });
