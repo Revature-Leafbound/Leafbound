@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+@import "~bootstrap/dist/css/bootstrap.css"
+=======
+=======
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+=======
+<<<<<<< HEAD
+>>>>>>> 21-fe-front-end-review
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 30px;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+>>>>>>> 21-fe-front-end-review
+=======
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+>>>>>>> 21-fe-front-end-review
+>>>>>>> 21-fe-front-end-review

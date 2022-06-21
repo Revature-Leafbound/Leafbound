@@ -1,0 +1,21 @@
+<div class="container-flex" *ngIf="currentSelectedProduct">
+    <div class="row">
+        <div class="col-4">
+            <img src="{{ getId(currentSelectedProduct.isbn) }}" alt="">
+        </div>
+
+        <div class="col-6">
+            <h2>{{currentSelectedProduct.title }}</h2>
+            <div>by <span>{{currentSelectedProduct.author}}</span></div>
+            <div>{{currentSelectedProduct.description}}</div>
+        </div>
+        
+        <div class="col">
+            <div id="price">${{currentSelectedProduct.list_price}}</div>
+            <div class="purchase">
+                <!-- [disabled]="isInCart" makes all buttons disabled-->
+                <button class="btn btn-success btn-lg btn-block" (click)="onAddToCart()">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
