@@ -32,6 +32,10 @@ export class ProductDisplayShelfComponent implements OnInit {
   }
 
   onAddToCart(product: Product): void {
+
+    //addToCart(product);
+    console.log(product);
+    
     // get user to insert into body
     const body = { 
       product: product,
@@ -43,10 +47,6 @@ export class ProductDisplayShelfComponent implements OnInit {
     const headers = {
       'Authorization':'Bearer the-token'
     }
-
-    //addToCart(product);
-    console.log(product);
-    this.isInCart = true;
 
     // make post request
     this.http.put<any>('http://localhost:8080/api/v1/cart', body, { headers }).subscribe(data => {
