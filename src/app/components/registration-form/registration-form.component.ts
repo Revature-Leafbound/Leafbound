@@ -1,6 +1,3 @@
-import { RegistrationCredentials } from './../../models/registrationCredentials';
-import { Router } from '@angular/router';
-import { UserService } from 'src/app/services/user.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 
@@ -15,21 +12,9 @@ export class RegistrationFormComponent implements OnInit {
     lastName: '',
     email: '',
     password: '',
-    roleId: 1
   });
-  constructor(
-    private userService: UserService,
-    private formBuilder: FormBuilder,
-    private router: Router) { }
+  constructor(private formBuilder: FormBuilder) {}
 
-  ngOnInit(): void { }
-
-  onSubmit(): void {
-    this.userService
-      .register(<RegistrationCredentials>this.registerForm.value)
-      .subscribe((response) => {
-        localStorage.setItem('token', response.headers.get('x-auth-token'));
-        this.router.navigate(['/']);
-      });
-  }
+  ngOnInit(): void {}
+  onSubmit(): void {}
 }
