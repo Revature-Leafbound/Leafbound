@@ -25,3 +25,4 @@ Github Repository: [Leafbound](https://github.com/Revature-Leafbound/Leafbound)
 ## 3. Clone the Leafbound-API Repository for back-end support.
 
 Additional instructions can be found [here](https://github.com/Revature-Leafbound/Leafbound-API/blob/main/STARTUP.md).
+

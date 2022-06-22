@@ -1,3 +1,4 @@
+import { RegistrationCredentials } from './../models/registration-credentials';
 import { LoginCredentials } from './../models/login-credentials';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, of, tap } from 'rxjs';
@@ -13,7 +14,7 @@ export class UserService {
   constructor(
     private messageService: MessagesService,
     private http: HttpClient
-  ) {}
+  ) { }
 
   attemptLogin(credentials: LoginCredentials): Observable<any> {
     const url = environment.apiUrl + '/user/login';
@@ -29,9 +30,17 @@ export class UserService {
       );
   }
 
-  register(user: User) {
-    const url = environment.apiUrl + '/users/register';
-    return this.http.post(url, user);
+  register(credentials: RegistrationCredentials): Observable<any> {
+    const url = environment.apiUrl + '/user/register';
+    return this.http
+      .post<any>(url, credentials, {
+        responseType: 'text' as 'json',
+        observe: 'response',
+      })
+      .pipe(
+        tap((response) => this.log(response.body)),
+        catchError(this.handleError<any>('register'))
+      );
   }
 
   private log(message: string) {
