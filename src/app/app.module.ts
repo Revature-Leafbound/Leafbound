@@ -22,6 +22,7 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 import { RouterModule } from '@angular/router';
 
 import { Cart } from './models/cart.model';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -46,12 +47,14 @@ import { Cart } from './models/cart.model';
     MatNativeDateModule,
     MaterialExampleModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: 'product', component: ProductDisplayComponent },
       { path: 'product/shelf', component: ProductDisplayShelfComponent },
       { path: 'product/item', component: ProductItemComponent },
       { path: '', redirectTo: '/product/shelf', pathMatch: 'full' },
     ]),
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
