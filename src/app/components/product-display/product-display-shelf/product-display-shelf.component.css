@@ -23,3 +23,14 @@ a {
 .book-author {
   font-style: italic;
 }
+
+.shelf-product-img img {
+  height: 250px;
+}
+
+.shelf-product {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 5px;
+}
