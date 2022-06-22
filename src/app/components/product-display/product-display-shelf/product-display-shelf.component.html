@@ -1,0 +1,30 @@
+<div class="container-flex" id="shelf">
+  <div
+    *ngFor="let product of products"
+    class="shelf-product"
+    style="width: 225px"
+  >
+    <a (click)="onSelect(product)" routerLink="/product/item">
+      <div class="shelf-product-img-cont">
+        <div class="shelf-product-img">
+          <!-- <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/33.png" alt="The Bard"> -->
+          <img src="{{ getId(product.isbn) }}" alt="" />
+        </div>
+      </div>
+      <div class="shelf-product-text-cont">
+        <div class="book-title">{{ product.title }}</div>
+        <div class="book-author">by {{ product.author }}</div>
+        <div class="book-price">{{ product.list_price | currency }}</div>
+      </div>
+    </a>
+    <div class="purchase">
+      <!-- [disabled]="isInCart" makes all buttons disabled-->
+      <button
+        class="btn btn-success btn-lg btn-block"
+        (click)="onAddToCart(product)"
+      >
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>

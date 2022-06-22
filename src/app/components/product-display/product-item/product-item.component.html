@@ -1,0 +1,49 @@
+<div class="container mt-5" id="product-section" *ngIf="currentSelectedProduct">
+  <div class="row">
+    <div class="col-md-6">
+      <img
+        src="{{ getId(currentSelectedProduct.isbn) }}"
+        alt=""
+        class="image-responsive"
+      />
+    </div>
+    <div class="col-md-6">
+      <div class="col-md-12">
+        <h2>{{ currentSelectedProduct.title }}</h2>
+        <div class="mt-2">
+          <h4 class="text-uppercase">Ikea</h4>
+          <div class="mt-5">
+            <h5 class="text-uppercase mb-0">Blanda Matt</h5>
+            <h1 class="main-heading mt-0">VASE</h1>
+            <div class="d-flex flex-row user-ratings">
+              <div class="ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <h6 class="text-muted ml-1"></h6>
+            </div>
+          </div>
+        </div>
+        <p>
+          by <span>{{ currentSelectedProduct.author }}</span>
+        </p>
+
+        <p>{{ currentSelectedProduct.description }}</p>
+        <p id="price">{{ currentSelectedProduct.list_price | currency }}</p>
+      </div>
+      <div class="purchase">
+        <!-- [disabled]="isInCart" makes all buttons disabled-->
+        <button
+          class="btn btn-primary btn-lg btn-block"
+          (click)="onAddToCart()"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end container -->

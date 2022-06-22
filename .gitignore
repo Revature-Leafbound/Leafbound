@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,angular
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,angular
+# Created by https://www.toptal.com/developers/gitignore/api/angular,eclipse,visualstudiocode,windows,macos,linux
+# Edit at https://www.toptal.com/developers/gitignore?templates=angular,eclipse,visualstudiocode,windows,macos,linux
 
 ### Angular ###
 ## Angular ##
@@ -33,6 +33,71 @@ e2e/*.map
 
 # System Files
 .DS_Store/
+
+### Eclipse ###
+.metadata
+bin/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# CDT- autotools
+.autotools
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+# Annotation Processing
+.apt_generated/
+.apt_generated_test/
+
+# Scala IDE specific (Scala & Java development for Eclipse)
+.cache-main
+.scala_dependencies
+.worksheet
+
+# Uncomment this line if you wish to ignore the project description file.
+# Typically, this file would be tracked if it contains build/dependency configurations:
+#.project
+
+### Eclipse Patch ###
+# Spring Boot Tooling
+.sts4-cache/
 
 ### Linux ###
 *~
@@ -82,6 +147,31 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# Support for Project snippet scope
+.vscode/*.code-snippets
+
+# Ignore code-workspaces
+*.code-workspace
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -108,4 +198,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,angular
+# End of https://www.toptal.com/developers/gitignore/api/angular,eclipse,visualstudiocode,windows,macos,linux
