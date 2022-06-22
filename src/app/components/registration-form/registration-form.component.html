@@ -3,22 +3,13 @@
   <mat-card class="register-card">
     <mat-card-title>Register Form</mat-card-title>
     <mat-card-content>
-      <form
-        class="register-form"
-        [formGroup]="registerForm"
-        (ngSubmit)="onSubmit()"
-      >
+      <form class="register-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
         <table class="example-full-width" cellspacing="0">
           <tr>
             <!-- FIRST NAME FIELD   -->
             <td>
               <mat-form-field class="example-full-width">
-                <input
-                  matInput
-                  placeholder="First Name"
-                  name="First Name"
-                  required
-                />
+                <input matInput placeholder="First Name" name="First Name" formControlName="firstName" required />
               </mat-form-field>
             </td>
           </tr>
@@ -27,12 +18,7 @@
           <tr>
             <td>
               <mat-form-field class="example-full-width">
-                <input
-                  matInput
-                  placeholder="Last Name"
-                  name="Last Name"
-                  required
-                />
+                <input matInput placeholder="Last Name" name="Last Name" formControlName="lastName" required />
               </mat-form-field>
             </td>
           </tr>
@@ -40,7 +26,7 @@
           <tr>
             <td>
               <mat-form-field class="example-full-width">
-                <input matInput placeholder="Email" required />
+                <input matInput placeholder="Email" formControlName="email" required />
               </mat-form-field>
             </td>
           </tr>
@@ -48,20 +34,16 @@
           <tr>
             <td>
               <mat-form-field class="example-full-width">
-                <input
-                  matInput
-                  placeholder="Password"
-                  name="password"
-                  required
-                />
+                <input matInput placeholder="Password" name="password" formControlName="password" required />
               </mat-form-field>
             </td>
           </tr>
         </table>
+        <button mat-raised-button color="primary" class="button" type="submit">Register</button>
       </form>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary">Register</button>
+
     </mat-card-actions>
   </mat-card>
 </div>
