@@ -34,7 +34,7 @@ _The Leafbound online e-commerce platform is a full stack application where user
 
 Please check out our Startup Documentation for more information.
 
-- For backend, click [here](https://github.com/Revature-Leafbound/Leafbound-API/blob/dev/STARTUP.md)
+- For backend, click [here](https://github.com/Revature-Leafbound/Leafbound-API/blob/main/STARTUP.md)
 - For frontend, click [here](/STARTUP.md)
 
 ### Contributors
@@ -50,4 +50,4 @@ Please check out our Startup Documentation for more information.
 | :------------- | :------------- | :----------------- | :------------ | ---------------- |
 | Jacob Shaw     | Patrick Miller | Adam Lucas         | Yugal Subedi  | Julian Mercado   |
 | Vidya Bineesh  | Jorge Ayestas  | Jose E. Fuentes    | Enock Lee     | Joachim Ogodi    |
-| Patrick Yaegar | Markus Grier   | Santiago Garcia II | Jorge Galeana | Michael Bornhoft |
+| Patrick Yaeger | Markus Grier   | Santiago Garcia II | Jorge Galeana | Michael Bornhoft |

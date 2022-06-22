@@ -23,4 +23,6 @@ Github Repository: [Leafbound](https://github.com/Revature-Leafbound/Leafbound)
    - _The application will automatically reload if you change any of the source files._
 
 ## 3. Clone the Leafbound-API Repository for back-end support.
-Additional instructions can be found [here](https://github.com/Revature-Leafbound/Leafbound-API/blob/dev/STARTUP.md).
+
+Additional instructions can be found [here](https://github.com/Revature-Leafbound/Leafbound-API/blob/main/STARTUP.md).
+
